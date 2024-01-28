@@ -1,0 +1,54 @@
+/* Import Montserrat and Ubuntu fonts  */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu&display=swap");
+
+:root {
+  --main-color: #46a67e;
+  --box-color: #3c7b61;
+  --secondary-color: #f0fff5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("https://assets.codepen.io/6060109/ZigZag.png");
+  font-family: Montserrat;
+}
+
+h2 {
+  color: #2f463d;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+p {
+  font-family: Ubuntu;
+}
+
+.main-container {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 327px;
+  height: 567px;
+  margin: 50% auto;
+  text-align: center;
+  box-shadow: 0 40px 40px -20px var(--box-color);
+}
+
+.food-preview {
+  background-color: var(--secondary-color);
+  width: 279px;
+  height: 66px;
+  margin: 0 auto;
+}
+
+button[type="submit"] {
+  background-color: var(--main-color);
+  border-radius: 5px;
+  color: #fff;
+  padding: 3%;
+}
