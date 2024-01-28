@@ -39,11 +39,16 @@ p {
   box-shadow: 0 40px 40px -20px var(--box-color);
 }
 
-.food-preview {
+.food-item {
   background-color: var(--secondary-color);
+  border-radius: 5px;
   width: 279px;
   height: 66px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 button[type="submit"] {
@@ -51,4 +56,15 @@ button[type="submit"] {
   border-radius: 5px;
   color: #fff;
   padding: 3%;
+}
+
+img p {
+  display: block;
+}
+
+.food-item p.price {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
