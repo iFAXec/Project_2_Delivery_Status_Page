@@ -8,8 +8,12 @@
   </head>
   <body>
     <div class="main-container">
-      <img src="https://assets.codepen.io/6060109/food-close-x.png" alt="" />
-      <img src="svg/smiley-emoji.svg" alt="smiley emoji" />
+      <img
+        src="https://assets.codepen.io/6060109/food-close-x.png"
+        alt="close icon"
+        class="cross-icon"
+      />
+      <img src="svg/smiley-emoji.svg" alt="smiley emoji" class="smiley-emoji" />
 
       <h2>Confirmation</h2>
       <p>
@@ -18,7 +22,10 @@
       </p>
       <div class="food-item">
         <img src="images/rectangle.png" alt="Photo of Big Mac burger" />
-        <p>Big Mac Menu <span class="price">$29.99</span></p>
+        <div class="item-price">
+          <p>Big Mac Menu</p>
+          <span class="price">$29.99</span>
+        </div>
         <a href="#">Change</a>
       </div>
       <button type="submit">I’m Ready to Eat!</button>
