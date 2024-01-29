@@ -8,10 +8,11 @@
   --secondary-color: #f0fff5;
   --box-color: rgba(103, 189, 153, 0.2);
   --text-color: #828282;
-  --color_01: #467a66;
-  --color_02: #2f463d;
-  --color_03: ##7a8f85;
-  --color_04: #fff;
+  --color-1: #467a66;
+  --color-2: #2f463d;
+  --color-3: ##7a8f85;
+  --color-4: #fff;
+  --grey-1: #bdbdbd;
 }
 
 * {
@@ -38,7 +39,7 @@ p {
 }
 
 .main-container {
-  background-color: var(--color_04);
+  background-color: var(--color-4);
   border-radius: 5px;
   width: 327px;
   height: 567px;
@@ -92,18 +93,18 @@ button[type="submit"] {
   font-size: 13px;
   font-weight: 700;
   text-decoration-line: underline;
-  columns: var(--color_01);
+  columns: var(--color-1);
   margin: 0 15px 0 30px;
 }
 
 .food-item p {
-  color: var(--color_02);
+  color: var(--color-2);
   font-weight: 800;
   font-size: 14px;
 }
 
 .food-item span {
-  color: var(--color_03);
+  color: var(--color-3);
   font-weight: 500;
   font-size: 14px;
 }
@@ -124,13 +125,15 @@ button[type="submit"] {
   .choose-container,
   .process-container {
     display: block;
-    background-color: var(--color_04);
+    background-color: var(--color-4);
     border-radius: 5px;
     width: 327px;
     height: 567px;
     margin: 50% auto;
     text-align: center;
-    box-shadow: 0 40px 40px -20px var(--box-color);
+    position: relative;
+    padding: 3%;
+    line-height: 26px;
   }
 
   .all-container {
