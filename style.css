@@ -11,6 +11,7 @@
   --color_01: #467a66;
   --color_02: #2f463d;
   --color_03: ##7a8f85;
+  --color_04: #fff;
 }
 
 * {
@@ -37,7 +38,7 @@ p {
 }
 
 .main-container {
-  background-color: #fff;
+  background-color: var(--color_04);
   border-radius: 5px;
   width: 327px;
   height: 567px;
@@ -113,7 +114,27 @@ button[type="submit"] {
   right: 40%;
 }
 
+.choose-container,
+.process-container {
+  display: none;
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  ...;
+  .choose-container,
+  .process-container {
+    display: block;
+    background-color: var(--color_04);
+    border-radius: 5px;
+    width: 327px;
+    height: 567px;
+    margin: 50% auto;
+    text-align: center;
+    box-shadow: 0 40px 40px -20px var(--box-color);
+  }
+
+  .all-container {
+    display: flex;
+    justify-content: space-around;
+  }
 }
