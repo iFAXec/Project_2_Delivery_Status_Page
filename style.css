@@ -72,7 +72,9 @@ p {
   align-items: center;
 }
 
-button[type="submit"] {
+.confirmation-button,
+.choose-button,
+.process-button {
   background-color: var(--main-color);
   border-radius: 5px;
   color: #fff;
@@ -139,5 +141,10 @@ button[type="submit"] {
   .all-container {
     display: flex;
     justify-content: space-around;
+  }
+
+  .choose-button,
+  .process-button {
+    background-color: var(--grey-1);
   }
 }
