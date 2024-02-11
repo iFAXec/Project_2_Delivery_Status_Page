@@ -37,12 +37,18 @@ p {
   color: var(--text-color);
 }
 
+.all-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .main-container {
   background-color: var(--color-4);
   border-radius: 5px;
   width: 327px;
   height: 567px;
-  margin: 50% auto;
   text-align: center;
   box-shadow: 0px 40px 40px -20px #3c7b61;
   position: relative;
@@ -156,7 +162,6 @@ p {
     border-radius: 5px;
     width: 327px;
     height: 567px;
-    margin: 50% auto;
     text-align: center;
     position: relative;
     line-height: 26px;
@@ -164,25 +169,18 @@ p {
   }
 
   .choose-container {
-    margin-right: -7%;
-    z-index: -1;
+    margin-right: -5px;
   }
 
   .process-container {
-    margin-left: -7%;
-    z-index: -1;
+    margin-left: -5px;
   }
 
   .main-container {
     padding: 1%;
-    z-index: 9;
+    z-index: 1;
     width: 400px;
     height: 620px;
-  }
-
-  .all-container {
-    display: flex;
-    justify-content: center;
   }
 
   .choose-button,
